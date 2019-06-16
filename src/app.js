@@ -39,11 +39,19 @@ app.get('/help', (req, res) => {
   })
 })
 
-app.get('/weather', (req, res) => {
-  res.send({
-    location: 'Da Lat',
-    temperature: 24.4,
-    rainPercent: 50
+app.get('/help/*', (req, res) => {
+  res.render('404', {
+    errorMessage: 'Article not found!',
+    title: '404',
+    name: 'Trong Hieu'
+  })
+})
+
+app.get('*', (req, res) => {
+  res.render('404', {
+    errorMessage: 'Page not found!',
+    title: '404',
+    name: 'Trong Hieu'
   })
 })
 
