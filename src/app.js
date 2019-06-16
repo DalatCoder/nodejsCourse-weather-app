@@ -7,7 +7,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/help', (req, res) => {
-  res.end('Help page!')
+  res.end('Help page.')
+})
+
+app.get('/about', (req, res) => {
+  res.end('About page.')
+})
+
+app.get('/weather', (req, res) => {
+  res.end('Weather page.')
 })
 
 app.listen(3000, () => {
