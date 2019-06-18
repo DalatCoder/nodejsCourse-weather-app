@@ -1,4 +1,4 @@
-console.log('Client javascript is loaded!')
+console.log('>_ Nguyen Trong Hieu - Dai hoc Da Lat')
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
